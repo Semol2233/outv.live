@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Data_app',
+    'voutv',
     'rest_framework',
     'corsheaders',
     'account_admin_app',
