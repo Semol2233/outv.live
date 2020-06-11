@@ -6,7 +6,7 @@ from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
     path('simple',include('account_admin_app.urls')),
-    path('',include('voutv.urls')),
+    path('1f3b30040134431b160fec9106da9f7e',include('voutv.urls')),
 
     path('adminResultonline/', admin.site.urls),
     path('login',obtain_auth_token,name='token_auth' ),
