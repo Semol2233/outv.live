@@ -8,7 +8,8 @@ from datetime import datetime
 
 
 class Notice_bord(models.Model):
-    Post_Notice = models.CharField(max_length=30)
+    Notice_name = models.CharField(max_length=30)
+    details        = models.TextField(blank=True)
     img_Notice   = models.ImageField(upload_to='notice img/' ,blank=False)
 
     def __str__(self):
