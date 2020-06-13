@@ -4,9 +4,6 @@ from datetime import datetime
 
 
 
-
-
-
 class Notice_bord(models.Model):
     title = models.CharField(max_length=200)
     details        = models.TextField(blank=True)
@@ -23,7 +20,7 @@ class photo (models.Model):
 
 
     def __str__(self):
-        return self.img_title
+        return self.title
 
 
 class  Academic_Info(models.Model):
