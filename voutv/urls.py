@@ -9,7 +9,13 @@ from django.conf import settings
 urlpatterns = [
 
     path('', views.rootapiview.as_view()),
-    # path('ceatgrydata/<cat_name>', views.Content_owners.as_view()),
+    path('photo', views.photo_views.as_view()),
+    path('Academic_Info', views.Academic_Infos_views.as_view()),
+    path('livetvfedd', views.livtv_seri_views.as_view()),
+    path('coverimg', views.coverimg_seri_views.as_view()),
+    path('classnote', views.class_note_seri_views.as_view()),
+
+
  
 ]
 

@@ -16,19 +16,76 @@ class Notice_bordss(serializers.ModelSerializer):
         fields = [
             'id',
             'Notice_name',
-            'img_Notice'
+            'img_Notice',
+            'release_date'
         ]
 
 
-# class authorsname(serializers.ModelSerializer):
-#     class Meta:
-#         model = author
-#         fields = [
-#             'id',
-#             'author_name'
-#         ]
+class photos(serializers.ModelSerializer):
+    class Meta:
+        model = photo
+        fields = [
+            'id',
+            'img_title',
+            'img',
+            'release_date'
+
+        ]
 
 
+class Academic_Infos(serializers.ModelSerializer):
+    class Meta:
+        model = Academic_Info
+        fields = [
+            'id',
+            'title',
+            'slug',
+            'details',
+            'img',
+            'release_date'
+
+
+        ]
+
+
+
+
+class livtv_seri(serializers.ModelSerializer):
+    class Meta:
+        model = livtv
+        fields = [
+            'id',
+            'live_tv_url',
+            'live_logo',
+            'channel_name',
+            'release_date'
+
+        ]
+
+
+class coverimg_seri(serializers.ModelSerializer):
+    class Meta:
+        model = coverimg
+        fields = [
+            'id',
+            'coverimg',
+            'img_title',
+            'release_date'
+
+        ]
+
+class class_note_seri(serializers.ModelSerializer):
+    class Meta:
+        model = class_note
+        fields = [
+            'id',
+            'title',
+            'slug',
+            'details',
+            'document',
+            'release_date'
+
+        ]
 
 
 

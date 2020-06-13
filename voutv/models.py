@@ -11,6 +11,7 @@ class Notice_bord(models.Model):
     Notice_name = models.CharField(max_length=200)
     details        = models.TextField(blank=True)
     img_Notice   = models.ImageField(upload_to='notice img/' ,blank=False)
+    release_date   = models.DateField(auto_now_add = True)
 
     def __str__(self):
         return self.Notice_name
@@ -18,6 +19,7 @@ class Notice_bord(models.Model):
 class photo (models.Model):
     img_title = models.CharField(max_length=30)
     img   = models.ImageField(upload_to='img/' ,blank=False)
+    release_date   = models.DateField(auto_now_add = True)
 
 
     def __str__(self):
@@ -29,6 +31,7 @@ class  Academic_Info(models.Model):
     slug           = models.CharField(max_length=250, blank=False,unique=True)
     details        = models.TextField(blank=True)
     img            = models.ImageField(upload_to='Academic_Info/' ,blank=False)
+    release_date   = models.DateField(auto_now_add = True)
 
 
     def __str__(self):
@@ -38,17 +41,15 @@ class livtv(models.Model):
     live_tv_url = models.URLField(max_length=500,blank=False)
     live_logo   = models.ImageField(upload_to='live_tv_logo/' ,blank=False)
     channel_name = models.CharField(max_length=120)
+    release_date   = models.DateField(auto_now_add = True)
 
 
 
 class coverimg(models.Model):
     coverimg     = models.ImageField(upload_to='coverimg/')
     img_title    = models.CharField(max_length=200) 
+    release_date   = models.DateField(auto_now_add = True)    
 
-
-# class class_video(models.Model):
-#     coverimg     = models.ImageField(upload_to='coverimg/')
-#     img_title    = models.CharField(max_length=200) 
 
 
 class class_note(models.Model):
@@ -56,6 +57,7 @@ class class_note(models.Model):
     slug           = models.CharField(max_length=250, blank=False,unique=True)
     details        = models.TextField(blank=True)
     document       = models.FileField(upload_to='documents/')
+    release_date   = models.DateField(auto_now_add = True)
 
 
 

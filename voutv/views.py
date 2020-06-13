@@ -51,6 +51,58 @@ class rootapiview(generics.ListAPIView):
 
 
 
+class photo_views(generics.ListAPIView):
+    queryset               = photo.objects.all().order_by('-id')
+    serializer_class       = photos
+    pagination_class       = StandardResultsSetPagination
+
+
+
+class Academic_Infos_views(generics.ListAPIView):
+    queryset               = Academic_Info.objects.all().order_by('-id')
+    serializer_class       = Academic_Infos
+    pagination_class       = StandardResultsSetPagination
+
+
+
+class livtv_seri_views(generics.ListAPIView):
+    queryset               = livtv.objects.all().order_by('-id')
+    serializer_class       = livtv_seri
+    pagination_class       = StandardResultsSetPagination
+
+
+
+class coverimg_seri_views(generics.ListAPIView):
+    queryset               = coverimg.objects.all().order_by('-id')[:3]
+    serializer_class       = coverimg_seri
+    pagination_class       = StandardResultsSetPagination
+
+
+class class_note_seri_views(generics.ListAPIView):
+    queryset               = class_note.objects.all().order_by('-id')
+    serializer_class       = class_note_seri
+    pagination_class       = StandardResultsSetPagination
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
