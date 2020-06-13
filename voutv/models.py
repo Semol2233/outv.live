@@ -8,16 +8,16 @@ from datetime import datetime
 
 
 class Notice_bord(models.Model):
-    Notice_name = models.CharField(max_length=200)
+    title = models.CharField(max_length=200)
     details        = models.TextField(blank=True)
-    img_Notice   = models.ImageField(upload_to='notice img/' ,blank=False)
+    img   = models.ImageField(upload_to='notice img/' ,blank=False)
     release_date   = models.DateField(auto_now_add = True)
 
     def __str__(self):
-        return self.Notice_name
+        return self.title
 
 class photo (models.Model):
-    img_title = models.CharField(max_length=30)
+    title = models.CharField(max_length=30)
     img   = models.ImageField(upload_to='img/' ,blank=False)
     release_date   = models.DateField(auto_now_add = True)
 

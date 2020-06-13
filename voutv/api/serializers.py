@@ -15,8 +15,8 @@ class Notice_bordss(serializers.ModelSerializer):
         model = Notice_bord
         fields = [
             'id',
-            'Notice_name',
-            'img_Notice',
+            'title',
+            'img',
             'release_date'
         ]
 
@@ -26,7 +26,7 @@ class photos(serializers.ModelSerializer):
         model = photo
         fields = [
             'id',
-            'img_title',
+            'title',
             'img',
             'release_date'
 
