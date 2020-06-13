@@ -15,7 +15,7 @@ class Notice_bordss(serializers.ModelSerializer):
         model = Notice_bord
         fields = [
             'id',
-            'Post_Notice',
+            'Notice_name',
             'img_Notice'
         ]
 
