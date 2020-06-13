@@ -13,7 +13,7 @@ class Notice_bord(models.Model):
     img_Notice   = models.ImageField(upload_to='notice img/' ,blank=False)
 
     def __str__(self):
-        return self.Post_Notice
+        return self.Notice_name
 
 class photo (models.Model):
     img_title = models.CharField(max_length=30)
