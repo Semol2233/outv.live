@@ -9,6 +9,7 @@ from django.conf import settings
 urlpatterns = [
 
     path('', views.rootapiview.as_view()),
+    # path('ceatgrydata/<cat_name>', views.Content_owners.as_view()),
  
 ]
 

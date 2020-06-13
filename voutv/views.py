@@ -13,11 +13,11 @@ from rest_framework.parsers import JSONParser,FormParser,MultiPartParser
 import random
 import datetime
 #user model
-from voutv.models import post,livtv
+from voutv.models import *
 #end
 
 #serializer 
-from voutv.api.serializers import Rootapiviews
+from voutv.api.serializers import *
 #end
 
 # end
@@ -33,16 +33,54 @@ User = get_user_model()
 from rest_framework.parsers import MultiPartParser, FormParser, JSONParser
 
 
-
 class StandardResultsSetPagination(pagination.PageNumberPagination):
     page_size = 13
     page_size_query_param = 'page_size'
     max_page_size = 100
 
 
+
 class rootapiview(generics.ListAPIView):
-    queryset               = post.objects.all().order_by('-id')
-    serializer_class       = Rootapiviews
-    filter_backends        = [filters.SearchFilter]
-    search_fields          = ['authors__author_name','title','details','catagry__author_name']
+    queryset               = Notice_bord.objects.all().order_by('-id')
+    serializer_class       = Notice_bordss
     pagination_class       = StandardResultsSetPagination
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # class rootapiview(generics.ListAPIView):
+# #     queryset               = post.objects.all().order_by('-id')
+# #     serializer_class       = Rootapiviews
+# #     filter_backends        = [filters.SearchFilter]
+# #     search_fields          = ['authors__author_name','title','details','catagry__author_name']
+# #     pagination_class       = StandardResultsSetPagination
+
+
+
+# class Content_owners(generics.RetrieveAPIView):
+#      queryset               = cetagry.objects.order_by('-id')
+#      serializer_class       = ContensstOwner
+#      lookup_field           = ('cat_name')
+

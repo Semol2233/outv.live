@@ -48,20 +48,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'account_admin_app',
-    'rest_framework.authtoken',
-    'rest_auth',
     'django.contrib.sites',
-    'allauth',
-    'allauth.account',
-    'rest_auth.registration',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.facebook',
-    'allauth.socialaccount.providers.google',
 
 ]
-SITE_ID = 1
 
-ACCOUNT_EMAIL_VERIFICATION = 'none'
 #w
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -75,7 +65,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+SITE_ID=1
 CORS_ORIGIN_WHITELIST=(
     'http://localhost:8080',
     'http://127.0.0.1:8000',
