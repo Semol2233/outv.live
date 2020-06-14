@@ -6,7 +6,10 @@ from django.urls import path,include
 
 urlpatterns = [
     path('simple',include('account_admin_app.urls')),
-    path('',include('voutv.urls')),
+
+    path('sdvcsdcdcsdfder43543wrfwefcsf',include('voutv.urls')),
+    # path('dd',include('livetv.urls')),
+
 
     path('admin', admin.site.urls),
     # path('login',obtain_auth_token,name='token_auth' ),
