@@ -96,6 +96,21 @@ class Apps_fetures(generics.ListAPIView):
 
 
 
+class Apps_slidesr(generics.ListAPIView):
+    queryset               = Apps_slider.objects.all()[:5]
+    serializer_class       = Apps_slider_seri
+    pagination_class       = StandardResultsSetPagination
+
+
+
+
+class Apps_itemlist(generics.ListAPIView):
+    queryset               = Apps_linkup.objects.all()
+    serializer_class       = Apps_linkup_sri
+    pagination_class       = StandardResultsSetPagination
+
+
+
 
 
 

@@ -10,6 +10,10 @@ admin.site.register(livtv)
 admin.site.register(class_note)
 admin.site.register(Apps_about)
 
+admin.site.register(Apps_slider)
+admin.site.register(Apps_linkup)
+
+
 
 
 

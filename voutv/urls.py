@@ -16,9 +16,13 @@ urlpatterns = [
     path('sdvcsdcdcsdfder43543wrfwefcsf/classnote', views.class_note_seri_views.as_view()),
     path('sdvcsdcdcsdfder43543wrfwefcsf/Apps_other_data', views.Apps_fetures.as_view()),
 
+    path('sdvcsdcdcsdfder43543wrfwefcsf/slider', views.Apps_slidesr.as_view()),
+    path('sdvcsdcdcsdfder43543wrfwefcsf/item', views.Apps_itemlist.as_view()),
 
 
- 
+
+
+  
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

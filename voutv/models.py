@@ -68,6 +68,22 @@ class Apps_about(models.Model):
 
 
 
+
+
+
+class Apps_slider(models.Model):
+    img            = models.ImageField(upload_to='apps_Academic_Info/' ,blank=False)
+    release_date   = models.DateField(auto_now_add = True)
+
+
+class Apps_linkup(models.Model):
+    item  = models.CharField(max_length=20)
+    link = models.URLField(max_length=500,blank=False)
+    release_date   = models.DateField(auto_now_add = True)
+
+
+
+
 # class post(models.Model):
 #     authors        = models.ForeignKey(author,on_delete=models.CASCADE,related_name='items')
 #     catagry        = models.ForeignKey(cetagry,on_delete=models.CASCADE)

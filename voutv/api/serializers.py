@@ -100,6 +100,30 @@ class appsabot_feture(serializers.ModelSerializer):
         ]
 
 
+
+class Apps_slider_seri(serializers.ModelSerializer):
+    class Meta:
+        model = Apps_slider
+        fields = [
+            'id',
+            'img',
+
+        ]
+
+
+
+
+
+class Apps_linkup_sri(serializers.ModelSerializer):
+    class Meta:
+        model = Apps_linkup
+        fields = [
+            'id',
+            'item',
+            'link',
+        ]
+
+
 # class Rootapiviews(serializers.HyperlinkedModelSerializer):
 #     authors = authorsname(read_only=True)
 #     catagry = catgryname(read_only=True)
