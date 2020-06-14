@@ -113,6 +113,13 @@ class Apps_itemlist(generics.ListAPIView):
 
 
 
+class home_notice_bord_cat(generics.ListAPIView):
+    queryset               = Notice_bord.objects.all().order_by('-id')
+    serializer_class       = Notice_bordss
+    pagination_class       = StandardResultsSetPagination
+
+
+
 
 
 
