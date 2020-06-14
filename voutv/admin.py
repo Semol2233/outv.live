@@ -8,6 +8,8 @@ admin.site.register(Academic_Info)
 admin.site.register(coverimg)
 admin.site.register(livtv)
 admin.site.register(class_note)
+admin.site.register(Apps_about)
+
 
 
 
