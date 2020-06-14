@@ -88,6 +88,17 @@ class class_note_seri(serializers.ModelSerializer):
         ]
 
 
+class appsabot_feture(serializers.ModelSerializer):
+    class Meta:
+        model = Apps_about
+        fields = [
+            'id',
+            'about',
+            'details',
+            'facebook_link',
+
+        ]
+
 
 # class Rootapiviews(serializers.HyperlinkedModelSerializer):
 #     authors = authorsname(read_only=True)

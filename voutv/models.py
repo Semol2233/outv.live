@@ -61,6 +61,10 @@ class class_note(models.Model):
 
 
 
+class Apps_about(models.Model):
+    about          = models.CharField(max_length=100)
+    details        = models.TextField(blank=True)
+    facebook_link  = models.URLField(max_length=500,blank=False)
 
 
 

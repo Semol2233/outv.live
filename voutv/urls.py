@@ -14,6 +14,8 @@ urlpatterns = [
     path('sdvcsdcdcsdfder43543wrfwefcsf/livetvfedd', views.livtv_seri_views.as_view()),
     path('sdvcsdcdcsdfder43543wrfwefcsf/coverimg', views.coverimg_seri_views.as_view()),
     path('sdvcsdcdcsdfder43543wrfwefcsf/classnote', views.class_note_seri_views.as_view()),
+    path('sdvcsdcdcsdfder43543wrfwefcsf/Apps_other_data', views.Apps_fetures.as_view()),
+
 
 
  

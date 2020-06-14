@@ -87,6 +87,14 @@ class class_note_seri_views(generics.ListAPIView):
 
 
 
+class Apps_fetures(generics.ListAPIView):
+    queryset               = class_note.objects.all()
+    serializer_class       = appsabot_feture
+    pagination_class       = StandardResultsSetPagination
+
+
+
+
 
 
 
