@@ -22,6 +22,20 @@ urlpatterns = [
 
 
 
+
+
+
+
+    path('sdvcsdcdcsdfder43543wrfwefcsf/home_notice', views.home_notice_bord.as_view()),
+    path('sdvcsdcdcsdfder43543wrfwefcsf/photo_views_home', views.photo_views_home.as_view()),
+    path('sdvcsdcdcsdfder43543wrfwefcsf/Academic_Infos_views_home', views.Academic_Infos_views_home.as_view()),
+    path('sdvcsdcdcsdfder43543wrfwefcsf/class_note_seri_views_home', views.class_note_seri_views_home.as_view()),
+
+
+
+
+
+
   
 ]
 

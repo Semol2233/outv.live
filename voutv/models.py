@@ -97,3 +97,10 @@ class Apps_linkup(models.Model):
     
 #     def __str__(self):
 #         return self.title
+
+
+
+
+# home page
+
+

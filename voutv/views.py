@@ -129,6 +129,28 @@ class Apps_itemlist(generics.ListAPIView):
 
 
 
+# HOme page code
+class home_notice_bord(generics.ListAPIView):
+    queryset               = Notice_bord.objects.all().order_by('-id')[:3]
+    serializer_class       = Notice_bordss
+    pagination_class       = StandardResultsSetPagination
+
+
+
+
+class photo_views_home(generics.ListAPIView):
+    queryset               = photo.objects.all().order_by('-id')[:3]
+    serializer_class       = photos
+    pagination_class       = StandardResultsSetPagination
+
+
+
+
+
+class Academic_Infos_views_home(generics.ListAPIView):
+    queryset               = Academic_Info.objects.all().order_by('-id')
+    serializer_class       = Academic_Infos
+    pagination_class       = StandardResultsSetPagination
 
 
 
@@ -136,11 +158,10 @@ class Apps_itemlist(generics.ListAPIView):
 
 
 
-
-
-
-
-
+class class_note_seri_views_home(generics.ListAPIView):
+    queryset               = class_note.objects.all().order_by('-id')
+    serializer_class       = class_note_seri
+    pagination_class       = StandardResultsSetPagination
 
 
 
