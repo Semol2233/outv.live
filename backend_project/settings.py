@@ -67,7 +67,7 @@ MIDDLEWARE = [
 ]
 SITE_ID=1
 CORS_ORIGIN_REGEX_WHITELIST=(
-    'http://boutv.live/',
+    # 'http://boutv.live/',
 )
 # CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
