@@ -29,10 +29,10 @@ SECRET_KEY = '$9qjq3$sr73rn&*l5-lal@2#l9-g-5d$75gwv+yox1*z)1u_4x'
 #DEBUG = False production_server
 #DEBUG = False production_server
 
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['cdn.boutv.live']
-#ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ['cdn.boutv.live']
+ALLOWED_HOSTS = []
 #f
 #d
 # Application definition
@@ -70,7 +70,7 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_REGEX_WHITELIST=(
     'http://boutv.live/',
 )
-# # CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'backend_project.urls'
 
