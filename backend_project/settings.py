@@ -66,10 +66,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 SITE_ID=1
-CORS_ORIGIN_WHITELIST=(
+CORS_ORIGIN_REGEX_WHITELIST=(
     'http://boutv.live/',
 )
 # CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
 ROOT_URLCONF = 'backend_project.urls'
 
 TEMPLATES = [
