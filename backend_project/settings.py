@@ -69,7 +69,7 @@ SITE_ID=1
 CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = (
-    'http://boutv.com/',
+    'http://boutv.live/',
 )
 
 ROOT_URLCONF = 'backend_project.urls'
