@@ -61,7 +61,7 @@ class photo_views(generics.ListAPIView):
 
 
 class Academic_Infos_views(generics.ListAPIView):
-    queryset               = Academic_Info.objects.all().order_by('-id')
+    queryset               = Academic_Info.objects.all().order_by('-id')[:6]
     serializer_class       = Academic_Infos
     pagination_class       = StandardResultsSetPagination
     filter_backends        = [filters.SearchFilter]
