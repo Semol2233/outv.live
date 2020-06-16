@@ -84,7 +84,7 @@ class coverimg_seri_views(generics.ListAPIView):
 
 class class_note_seri_viewss(generics.ListAPIView):
     queryset               = class_note.objects.all().order_by('-id')[:6]
-    serializer_class       = class_note_seri_home
+    serializer_class       = class_note_seri
     pagination_class       = StandardResultsSetPagination
 
 
