@@ -33,6 +33,10 @@ urlpatterns = [
     path('sdvcsdcdcsdfder43543wrfwefcsf/Academic_Infos_views_home', views.Academic_Infos_views_home.as_view()),
     path('sdvcsdcdcsdfder43543wrfwefcsf/class_note_seri_views_home', views.class_note_seri_views_home.as_view()),
 
+    path('sdvcsdcdcsdfder43543wrfwefcsf/class_note_seri_viewss_homes', views.class_note_seri_viewss.as_view()),
+
+
+
 
 
 
