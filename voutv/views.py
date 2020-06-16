@@ -42,7 +42,7 @@ class StandardResultsSetPagination(pagination.PageNumberPagination):
 
 
 class rootapiview(generics.ListAPIView):
-    permission_classes     = [permissions.IsAuthenticated]
+    # permission_classes     = [permissions.IsAuthenticated]
     queryset               = Notice_bord.objects.all().order_by('-id')
     serializer_class       = Notice_bordss
     pagination_class       = StandardResultsSetPagination
@@ -64,6 +64,8 @@ class Academic_Infos_views(generics.ListAPIView):
     queryset               = Academic_Info.objects.all().order_by('-id')
     serializer_class       = Academic_Infos
     pagination_class       = StandardResultsSetPagination
+    filter_backends        = [filters.SearchFilter]
+    search_fields          = ['title','details','']
 
 
 
@@ -119,6 +121,8 @@ class home_notice_bord_cat(generics.ListAPIView):
     queryset               = Notice_bord.objects.all().order_by('-id')
     serializer_class       = Notice_bordss
     pagination_class       = StandardResultsSetPagination
+
+
 
 
 

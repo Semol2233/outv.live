@@ -54,6 +54,7 @@ class class_note(models.Model):
     slug           = models.CharField(max_length=250, blank=False,unique=True)
     details        = models.TextField(blank=True)
     document       = models.FileField(upload_to='documents/')
+    note_img       = models.ImageField(upload_to='note_img/')
     release_date   = models.DateField(auto_now_add = True)
 
 
@@ -80,6 +81,18 @@ class Apps_linkup(models.Model):
     item  = models.CharField(max_length=20)
     link = models.URLField(max_length=500,blank=False)
     release_date   = models.DateField(auto_now_add = True)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
