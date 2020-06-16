@@ -4,6 +4,7 @@ from rest_framework import viewsets
 from rest_framework import generics,permissions,mixins,filters
 from rest_framework import pagination
 from rest_framework import authentication
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -41,6 +42,7 @@ class StandardResultsSetPagination(pagination.PageNumberPagination):
 
 
 class rootapiview(generics.ListAPIView):
+    permission_classes     = [permissions.IsAuthenticated]
     queryset               = Notice_bord.objects.all().order_by('-id')
     serializer_class       = Notice_bordss
     pagination_class       = StandardResultsSetPagination

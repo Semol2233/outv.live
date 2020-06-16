@@ -48,11 +48,19 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'account_admin_app',
+    'rest_framework.authtoken',
+    'rest_auth',
     'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'rest_auth.registration',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
 
 ]
 
-#w
+SITE_ID = 1
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -66,12 +74,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 SITE_ID=1
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 #CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_ALLOW_ALL = True
 
-CORS_ORIGIN_WHITELIST = (
-    'http://boutv.live/',
-)
+# CORS_ORIGIN_WHITELIST = (
+#     'http://boutv.live/',
+# )
 
 ROOT_URLCONF = 'backend_project.urls'
 
