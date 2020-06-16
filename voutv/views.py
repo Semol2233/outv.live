@@ -43,8 +43,8 @@ class StandardResultsSetPagination(pagination.PageNumberPagination):
 
 class rootapiview(generics.ListAPIView):
     # permission_classes     = [permissions.IsAuthenticated]
-    queryset               = Notice_bord.objects.all().order_by('-id')[:6]
-    serializer_class       = Notice_bordss
+    queryset               = class_note.objects.all().order_by('-id')[:6]
+    serializer_class       = class_note_seri
     pagination_class       = StandardResultsSetPagination
 
 
@@ -81,11 +81,6 @@ class coverimg_seri_views(generics.ListAPIView):
     serializer_class       = coverimg_seri
     pagination_class       = StandardResultsSetPagination
 
-
-class class_note_seri_viewss(generics.ListAPIView):
-    queryset               = class_note.objects.all().order_by('-id')[:6]
-    serializer_class       = class_note_seri
-    pagination_class       = StandardResultsSetPagination
 
 
 
@@ -178,18 +173,4 @@ class class_note_seri_views_home(generics.ListAPIView):
 
 
 
-
-# # class rootapiview(generics.ListAPIView):
-# #     queryset               = post.objects.all().order_by('-id')
-# #     serializer_class       = Rootapiviews
-# #     filter_backends        = [filters.SearchFilter]
-# #     search_fields          = ['authors__author_name','title','details','catagry__author_name']
-# #     pagination_class       = StandardResultsSetPagination
-
-
-
-# class Content_owners(generics.RetrieveAPIView):
-#      queryset               = cetagry.objects.order_by('-id')
-#      serializer_class       = ContensstOwner
-#      lookup_field           = ('cat_name')
 

@@ -13,7 +13,6 @@ urlpatterns = [
     path('sdvcsdcdcsdfder43543wrfwefcsf/Academic_Info', views.Academic_Infos_views.as_view()),
     path('sdvcsdcdcsdfder43543wrfwefcsf/livetvfedd', views.livtv_seri_views.as_view()),
     path('sdvcsdcdcsdfder43543wrfwefcsf/coverimg', views.coverimg_seri_views.as_view()),
-    path('sdvcsdcdcsdfder43543wrfwefcsf/classnote', views.class_note_seri_views.as_view()),
     path('sdvcsdcdcsdfder43543wrfwefcsf/Apps_other_data', views.Apps_fetures.as_view()),
     path('sdvcsdcdcsdfder43543wrfwefcsf/notice_bord', views.home_notice_bord_cat.as_view()),
 
@@ -33,7 +32,7 @@ urlpatterns = [
     path('sdvcsdcdcsdfder43543wrfwefcsf/Academic_Infos_views_home', views.Academic_Infos_views_home.as_view()),
     path('sdvcsdcdcsdfder43543wrfwefcsf/class_note_seri_views_home', views.class_note_seri_views_home.as_view()),
 
-    path('sdvcsdcdcsdfder43543wrfwefcsf/class_note_seri_viewss_homes', views.class_note_seri_viewss.as_view()),
+
 
 
 
