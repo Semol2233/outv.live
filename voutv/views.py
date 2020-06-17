@@ -166,7 +166,7 @@ class class_note_seri_views_home(generics.ListAPIView):
 
 
 class apps_StandardResultsSetPagination(pagination.PageNumberPagination):
-    page_size = 4
+    page_size = 5
     page_size_query_param = 'page_size'
     max_page_size = 100
 
