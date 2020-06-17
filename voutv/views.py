@@ -147,7 +147,7 @@ class photo_views_home(generics.ListAPIView):
 
 
 class Academic_Infos_views_home(generics.ListAPIView):
-    queryset               = Academic_Info.objects.all().order_by('-id')
+    queryset               = Academic_Info.objects.all().order_by('-id')[:6]
     serializer_class       = Academic_Infos
     pagination_class       = StandardResultsSetPagination
 
