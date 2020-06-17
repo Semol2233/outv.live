@@ -11,6 +11,7 @@ class Notice_bord(models.Model):
     title          = models.CharField(max_length=200)
     details        =  RichTextUploadingField(blank=True )
     img            = models.ImageField(upload_to='notice_img/' ,blank=False)
+    document_notice       = models.FileField(upload_to='documents_notice_bord/')
     release_date   = models.DateField(auto_now_add = True)
 
     def __str__(self):
