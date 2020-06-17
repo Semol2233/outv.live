@@ -1,13 +1,16 @@
 from django.db import models
 from datetime import datetime
 
+from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
+
 
 
 
 class Notice_bord(models.Model):
     title = models.CharField(max_length=200)
-    details        = models.TextField(blank=True)
-    img   = models.ImageField(upload_to='notice img/' ,blank=False)
+    details        =  RichTextUploadingField(blank=True )
+    img          = models.ImageField(upload_to='notice img/' ,blank=False)
     release_date   = models.DateField(auto_now_add = True)
 
     def __str__(self):

@@ -16,6 +16,7 @@ class Notice_bordss(serializers.ModelSerializer):
         fields = [
             'id',
             'title',
+            'details',
             'img',
             'release_date'
         ]

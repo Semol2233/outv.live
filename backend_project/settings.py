@@ -38,6 +38,7 @@ ALLOWED_HOSTS = ['cdn.boutv.live']
 # Application definition
 
 INSTALLED_APPS = [
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -57,8 +58,12 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
+    'ckeditor',
+    'ckeditor_uploader'
 
 ]
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
 
 SITE_ID = 1
 MIDDLEWARE = [
@@ -123,6 +128,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+
 
 
 # Password validation
