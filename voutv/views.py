@@ -65,7 +65,7 @@ class Academic_Infos_views(generics.ListAPIView):
     serializer_class       = Academic_Infos
     pagination_class       = StandardResultsSetPagination
     filter_backends        = [filters.SearchFilter]
-    search_fields          = ['title','details','']
+    search_fields          = ['title','details']
 
 
 
