@@ -57,7 +57,7 @@ class class_note(models.Model):
     slug           = models.CharField(max_length=250, blank=False,unique=True)
     details        = models.TextField(blank=True)
     document       = models.FileField(upload_to='documents/')
-    note_img       = models.ImageField(upload_to='note_img/')
+    note_img       = models.ImageField(upload_to='note_img_s/')
     release_date   = models.DateField(auto_now_add = True)
 
 

@@ -82,6 +82,7 @@ class class_note_seri(serializers.ModelSerializer):
             'id',
             'title',
             'slug',
+            'note_img',
             'details',
             'document',
             'release_date'
