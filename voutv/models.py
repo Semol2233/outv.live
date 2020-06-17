@@ -10,7 +10,7 @@ from ckeditor_uploader.fields import RichTextUploadingField
 class Notice_bord(models.Model):
     title = models.CharField(max_length=200)
     details        =  RichTextUploadingField(blank=True )
-    img          = models.ImageField(upload_to='notice img/' ,blank=False)
+    img            = models.ImageField(upload_to='notice img/' ,blank=False)
     release_date   = models.DateField(auto_now_add = True)
 
     def __str__(self):
