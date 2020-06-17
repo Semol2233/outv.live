@@ -69,12 +69,6 @@ class Academic_Infos_views(generics.ListAPIView):
 
 
 
-class livtv_seri_views(generics.ListAPIView):
-    queryset               = livtv.objects.all().order_by('-id')
-    serializer_class       = livtv_seri
-    pagination_class       = StandardResultsSetPagination
-
-
 
 class coverimg_seri_views(generics.ListAPIView):
     queryset               = coverimg.objects.all().order_by('-id')[:3]
@@ -173,4 +167,15 @@ class class_note_seri_views_home(generics.ListAPIView):
 
 
 
+
+class apps_StandardResultsSetPagination(pagination.PageNumberPagination):
+    page_size = 7
+    page_size_query_param = 'page_size'
+    max_page_size = 100
+
+
+class livtv_seri_views(generics.ListAPIView):
+    queryset               = livtv.objects.all().order_by('-id')
+    serializer_class       = livtv_seri
+    pagination_class       = apps_StandardResultsSetPagination
 
