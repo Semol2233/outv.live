@@ -11,7 +11,7 @@ class Notice_bord(models.Model):
     title          = models.CharField(max_length=200)
     details        =  RichTextUploadingField(blank=True )
     img               = models.ImageField(upload_to='notice_img_bord/' ,blank=False,default='notice_img_bord/fvfv.jpg')
-    document_notice       = models.FileField(upload_to='documents_notice_bord/',blank=False,default='no pdf file')
+    Pdf_file       = models.FileField(upload_to='documents_notice_bord/',blank=False,default='no pdf file')
     release_date   = models.DateField(auto_now_add = True)
 
     def __str__(self):
@@ -56,7 +56,7 @@ class coverimg(models.Model):
 class class_note(models.Model):
     title          = models.CharField(max_length=100)
     details        = models.TextField(blank=True)
-    document       = models.FileField(upload_to='documents/', blank=False,default='no img')
+    Pdf_file       = models.FileField(upload_to='documents/', blank=False,default='no img')
     note_img       = models.ImageField(upload_to='note_img_s/',default='note_img_s//tgtgvt.jpg',blank=False)
     release_date   = models.DateField(auto_now_add = True)
 
