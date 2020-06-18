@@ -17,6 +17,7 @@ class Notice_bordss(serializers.ModelSerializer):
             'id',
             'title',
             'details',
+            'Pdf_file',
             'img',
             'release_date'
         ]
@@ -84,7 +85,7 @@ class class_note_seri(serializers.ModelSerializer):
             'slug',
             'note_img',
             'details',
-            'document',
+            'Pdf_file',
             'release_date'
 
         ]
