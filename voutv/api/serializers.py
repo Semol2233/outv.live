@@ -82,7 +82,6 @@ class class_note_seri(serializers.ModelSerializer):
         fields = [
             'id',
             'title',
-            'slug',
             'note_img',
             'details',
             'Pdf_file',
