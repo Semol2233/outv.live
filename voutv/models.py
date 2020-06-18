@@ -57,7 +57,7 @@ class class_note(models.Model):
     title          = models.CharField(max_length=100)
     details        = models.TextField(blank=True)
     Pdf_file       = models.FileField(upload_to='documents/', blank=False,default='no img')
-    note_img       = models.ImageField(upload_to='note_img_s/',default='note_img_s//tgtgvt.jpg',blank=False)
+    note_img       = models.ImageField(upload_to='note_img_s/',default='note_img_s/tgtgvt.jpg',blank=False)
     release_date   = models.DateField(auto_now_add = True)
 
 
