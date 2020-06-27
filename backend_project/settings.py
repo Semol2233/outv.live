@@ -68,6 +68,7 @@ CKEDITOR_UPLOAD_PATH = "uploads/"
 SITE_ID = 1
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.BrokenLinkEmailsMiddleware',
     'django.middleware.common.CommonMiddleware',
 
     'django.middleware.security.SecurityMiddleware',
@@ -80,12 +81,14 @@ MIDDLEWARE = [
 ]
 SITE_ID=1
 ACCOUNT_EMAIL_VERIFICATION = 'none'
-# CORS_ORIGIN_ALLOW_ALL = False
-CORS_ORIGIN_ALLOW_ALL = True
+
+
+CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = (
-    'http://boutv.live/',
+    'http://www.boutv.live/',
 )
+
 
 ROOT_URLCONF = 'backend_project.urls'
 
