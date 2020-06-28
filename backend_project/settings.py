@@ -87,8 +87,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOW_CREDENTIALS = False
 CORS_ORIGIN_WHITELIST = (
-    'www.boutv.live',
-    'boutv.live',
+    'http://boutv.live/',
     'http://www.boutv.live/'
 
 
