@@ -40,7 +40,7 @@ class  Academic_Info(models.Model):
     
 class livtv(models.Model):
     live_tv_url = models.URLField(max_length=500,blank=False)
-    iframe         = models.CharField(max_length=100 ,default="0")    
+    iframe         = models.CharField(max_length=800 ,default="0")    
     live_logo   = models.ImageField(upload_to='live_tv_logo/' ,blank=False)
     channel_name = models.CharField(max_length=120)
     release_date   = models.DateField(auto_now_add = True)
