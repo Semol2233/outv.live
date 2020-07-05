@@ -58,6 +58,7 @@ class livtv_seri(serializers.ModelSerializer):
         fields = [
             'id',
             'live_tv_url',
+            'iframe',
             'live_logo',
             'channel_name',
             'release_date'
